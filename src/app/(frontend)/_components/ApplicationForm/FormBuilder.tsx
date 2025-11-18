@@ -111,13 +111,13 @@ export default function FormBuilder({
           )
         })}
 
-      {error && <p className="text-red-600">{error}</p>}
+      {error && <p className="text-white">{error}</p>}
 
       <button
         type="submit"
         className={
           classNames.button ||
-          'w-full bg-black text-white px-5 h-[56px] rounded-2xl font-unbounded hover:text-hover transition'
+          'w-full bg-primary text-white px-5 h-[56px] rounded-2xl font-unbounded hover:text-hover transition'
         }
       >
         {submitButtonLabel}

@@ -48,6 +48,7 @@ export default function ApplicationFormBlock({ component }: { component: Compone
           return (
             <div key={id}>
               <h1 className="text-4xl text-center pb-8 md:pb-12">{block.heading}</h1>
+      
               <div
                 className="hidden lg:flex"
                 style={{
@@ -60,7 +61,7 @@ export default function ApplicationFormBlock({ component }: { component: Compone
               >
                 {/* Left Side */}
                 <div className="flex flex-col gap-5 w-1/2 pt-40 pl-40 text-black">
-                  <h1 className="text-3xl pb-4">{block.title}</h1>
+                  <h1 className="text-3xl pb-4 text-white">{block.title}</h1>
                   {block.contacts?.map((contact, i) => (
                     <div key={i}>
                       {typeof contact.icon === 'object' && contact.icon.url && (
@@ -73,7 +74,7 @@ export default function ApplicationFormBlock({ component }: { component: Compone
                             className="object-contain"
                             draggable={false}
                           />
-                          <p className="font-light">{contact.item}</p>
+                          <p className="font-light text-white">{contact.item}</p>
                         </div>
                       )}
                     </div>

@@ -1,7 +1,6 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Unbounded:wght@200..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
 
 * {
   box-sizing: border-box;
@@ -12,36 +11,40 @@ body {
 }
 
 @theme {
-    --font-unbounded: "Unbounded", sans-serif;
-    --font-inter: "Inter", sans-serif;
-    --font-montserrat: "Montserrat", sans-serif;
+  --font-unbounded: 'Unbounded', sans-serif;
+  --font-inter: 'Inter', sans-serif;
+  --font-montserrat: 'Montserrat', sans-serif;
 
-    --color-back: var(--back);
+  --color-back: var(--back);
 
-    --color-primary: #CCFE00;
-    --color-greenBG: #F4FECD;
-    --color-blueBG: #CCD7F7;
-    --color-hover: #DBFF48;
-    --color-background: var(--background);
-    --color-label: var(--label);
-    --color-hoverText: var(--hoverText);
+  /* --color-primary: #f20000; */
+  --color-primary: #f20000;
 
-    /* crumbs */
-    --color-crumbs: var(--crumbs);
+  --color-greenBG: #f4fecd;
 
-    --color-link: var(--link);
+  --color-blueBG: #ccd7f7;
 
-    /* active */
-    --color-cityHover: var(--cityHover);
-    /* Input BG */
-    --color-inputBG: var(--inputBG);
-    --color-heroBG: var(--heroBG);
+  /* --color-hover: #DBFF48;  */
+  --color-hover: #ff1a1a;
 
+  --color-background: var(--background);
+  --color-label: var(--label);
+  --color-hoverText: var(--hoverText);
 
+  /* crumbs */
+  --color-crumbs: var(--crumbs);
+
+  --color-link: var(--link);
+
+  /* active */
+  --color-cityHover: var(--cityHover);
+  /* Input BG */
+  --color-inputBG: var(--inputBG);
+  --color-heroBG: var(--heroBG);
 }
 
 :root {
-  --background: #F3F4F4;
+  --background: #f3f4f4;
   --heroBG: var(--color-gray-950);
   --back: #fff;
   --label: #12121266;
@@ -53,11 +56,11 @@ body {
 }
 
 .dark {
-  --background: #2C2C2C;
+  --background: #2c2c2c;
   --heroBG: #2c2c2c;
   --back: #121212;
   --label: #fff;
-  --hoverText: #CCFE00;
+  --hoverText: #f20000;
   --crumbs: var(--color-gray-600);
   --cityHover: #444;
   --inputBG: #242424;
@@ -65,10 +68,10 @@ body {
 }
 
 .bg-container::before {
-  content: "";
+  content: '';
   position: absolute;
   inset: 0;
-  background-image: url("/wave.svg");
+  background-image: url('/wave.svg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center right;
@@ -89,9 +92,8 @@ body {
   display: none; /* Chrome, Safari, Opera */
 }
 
-
 .container-class {
-  @apply container mx-auto my-16 lg:my-20 px-6 lg:px-24 lg:py-13
+  @apply container mx-auto my-16 lg:my-20 px-6 lg:px-24 lg:py-13;
 }
 
 @media (max-width: 768px) {
@@ -116,87 +118,87 @@ body {
 
 /* list */
 .payload-richtext ul {
-    @apply list-disc font-inter list-inside py-4 pl-3 font-light text-sm;
-  }
+  @apply list-disc font-inter list-inside py-4 pl-3 font-light text-sm;
+}
 
-  .payload-richtext ol {
-    @apply list-decimal font-inter list-inside py-4 pl-3 font-light text-sm;
-  }
+.payload-richtext ol {
+  @apply list-decimal font-inter list-inside py-4 pl-3 font-light text-sm;
+}
 
-  .payload-richtext strong {
-    @apply font-medium
-  }
+.payload-richtext strong {
+  @apply font-medium;
+}
 
-  .payload-richtext blockquote {
-    @apply border-l-4 border-gray-300 pl-4 font-inter italic my-4 font-light
-  }
+.payload-richtext blockquote {
+  @apply border-l-4 border-gray-300 pl-4 font-inter italic my-4 font-light;
+}
 
- /* Headings */
-  .payload-richtext h1 {
-    @apply text-2xl md:text-4xl my-2 md:mb-4 md:px-40 md:leading-13;
-  }
+/* Headings */
+.payload-richtext h1 {
+  @apply text-2xl md:text-4xl my-2 md:mb-4 md:px-40 md:leading-13;
+}
 
-  .payload-richtext h2 {
-    @apply text-2xl md:text-3xl mb-2 md:mb-4 md:leading-12;
-  }
+.payload-richtext h2 {
+  @apply text-2xl md:text-3xl mb-2 md:mb-4 md:leading-12;
+}
 
-  .payload-richtext h3 {
-    @apply text-lg md:text-2xl mb-4;
-  }
+.payload-richtext h3 {
+  @apply text-lg md:text-2xl mb-4;
+}
 
-  .payload-richtext h4 {
-    @apply text-lg md:text-xl mb-4;
-  }
+.payload-richtext h4 {
+  @apply text-lg md:text-xl mb-4;
+}
 
-  .payload-richtext h5 {
-    @apply text-xl mb-2;
-  }
+.payload-richtext h5 {
+  @apply text-xl mb-2;
+}
 
-  .payload-richtext p {
-    @apply font-inter font-light text-base;
-  }
+.payload-richtext p {
+  @apply font-inter font-light text-base;
+}
 
-  .adv-richtext p {
-    @apply text-base font-normal text-black/80; /* Or use rem like 1rem */
-  }
+.adv-richtext p {
+  @apply text-base font-normal text-black/80; /* Or use rem like 1rem */
+}
 
-  .approach-richtext h1 {
-    @apply text-2xl md:text-4xl my-2 md:mb-4 md:px-40 md:leading-13;
-  }
+.approach-richtext h1 {
+  @apply text-2xl md:text-4xl my-2 md:mb-4 md:px-40 md:leading-13;
+}
 
-  .approach-richtext p {
-    @apply text-lg font-inter md:px-24
-  }
+.approach-richtext p {
+  @apply text-lg font-inter md:px-24;
+}
 
-  .mission-richtext p {
-    @apply text-sm font-inter uppercase text-hoverText mb-4; 
-  }
+.mission-richtext p {
+  @apply text-sm font-inter uppercase text-hoverText mb-4;
+}
 
-  .mission-richtext h5 {
-    @apply text-base md:text-2xl; 
-  }
+.mission-richtext h5 {
+  @apply text-base md:text-2xl;
+}
 
-  /* Company heading */
-  .company-richtext h1 {
-    @apply text-xl md:text-4xl my-2 md:mb-4 px-6 md:px-40 md:leading-13;
-  }
+/* Company heading */
+.company-richtext h1 {
+  @apply text-xl md:text-4xl my-2 md:mb-4 px-6 md:px-40 md:leading-13;
+}
 
-  /* Case heading */
-  .case-richtext h1 {
-    @apply text-2xl md:text-5xl mb-2 md:mb-4
-  }
-  .case-richtext p {
-    @apply text-base md:text-2xl font-light
-  }
+/* Case heading */
+.case-richtext h1 {
+  @apply text-2xl md:text-5xl mb-2 md:mb-4;
+}
+.case-richtext p {
+  @apply text-base md:text-2xl font-light;
+}
 
-    /* Vacancy heading */
-    .vacancy-richtext h1 {
-      @apply text-2xl md:text-5xl mb-2 md:mb-8
-    }
-    .vacancy-richtext p {
-      @apply text-base md:text-xl font-light font-inter
-    }
+/* Vacancy heading */
+.vacancy-richtext h1 {
+  @apply text-2xl md:text-5xl mb-2 md:mb-8;
+}
+.vacancy-richtext p {
+  @apply text-base md:text-xl font-light font-inter;
+}
 
-   .inputBase {
-    @apply w-full rounded-2xl p-3 border border-gray-300 text-black bg-white focus:outline-none focus:ring-2
-   }
+.inputBase {
+  @apply w-full rounded-2xl p-3 border border-gray-300 text-black bg-white focus:outline-none focus:ring-2;
+}

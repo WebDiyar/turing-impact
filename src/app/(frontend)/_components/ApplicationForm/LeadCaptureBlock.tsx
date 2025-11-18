@@ -69,7 +69,7 @@ export default function LeadCaptureBlock({ block, solutions }: Props) {
                 select:
                   'w-full rounded-2xl px-4 py-5 md:py-4 bg-inputBG text-lg focus:outline-none focus:ring-2',
                 button:
-                  'bg-primary text-black px-5 rounded-2xl py-4 lg:h-min-full font-unbounded transition hover:bg-hover cursor-pointer',
+                  'bg-primary text-white px-5 rounded-2xl py-4 lg:h-min-full font-unbounded transition hover:bg-hover cursor-pointer',
               }}
             />
           </div>

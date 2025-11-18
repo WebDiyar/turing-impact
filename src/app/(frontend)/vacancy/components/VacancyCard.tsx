@@ -40,7 +40,7 @@ export default function VacancyCard({ item }: { item: Vacancy }) {
       <div className="flex flex-col gap-4">
         <div className="flex items-center justify-between">
           <h3 className="text-xl">{item.title}</h3>
-          <span className="text-black bg-primary rounded-full px-3 py-1 text-sm">{item.city}</span>
+          <span className="text-white bg-primary rounded-full px-3 py-1 text-sm">{item.city}</span>
         </div>
         <p className="font-inter text-base text-muted-foreground line-clamp-2 md:line-clamp-none">
           {item.subtitle}
