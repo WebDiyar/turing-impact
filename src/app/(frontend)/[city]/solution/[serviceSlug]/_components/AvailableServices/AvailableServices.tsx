@@ -17,6 +17,7 @@ export default function AvailableServices({
   const [currentCity] = useCurrentCity()
   const [modalOpen, setModalOpen] = useState(false)
 
+  console.log(solution.availableServices)
   const renderServices = () => {
     if (subservice) {
       return (

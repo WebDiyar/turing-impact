@@ -122,7 +122,7 @@ export default function HeroBlock({ component }: { component: Component }) {
                   <Link
                     href={block.cta_button.url}
                     className="px-4 py-2 border border-primary/80
-                     text-white text-sm rounded-custom max-w-fit font-light hover:text-primary transition duration-300"
+                     text-primary text-sm rounded-custom max-w-fit font-light hover:text-primary/80 transition duration-300"
                     draggable={false}
                   >
                     {block.cta_button.label}

@@ -1,5 +1,4 @@
 'use client'
-import Image from 'next/image'
 import { Navigation } from '@/payload-types'
 import ThemeSwitch from './ThemeSwitch/ThemeSwitch'
 import { IoArrowUpOutline } from 'react-icons/io5'

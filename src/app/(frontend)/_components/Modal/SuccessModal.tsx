@@ -18,7 +18,7 @@ export default function SuccessModal({ isOpen, onClose, children }: Props) {
         <div className="flex justify-end items-end mb-4">
           <X onClick={onClose} size={28} className="cursor-pointer" />
         </div>
-        <div className="text-green-500 mb-4">
+        <div className="text-red-500 mb-4">
           <svg className="w-16 h-16 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
           </svg>
