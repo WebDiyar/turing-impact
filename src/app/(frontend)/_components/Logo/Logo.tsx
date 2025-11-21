@@ -8,8 +8,7 @@ import { useTheme } from 'next-themes'
 
 export const Logo = ({ nav }: { nav: Navigation }) => {
   const { resolvedTheme } = useTheme()
-
-
+  
   const logo =
     resolvedTheme === 'dark'
       ? typeof nav.logoDark === 'object' && nav.logoDark?.url
