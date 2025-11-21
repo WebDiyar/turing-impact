@@ -63,7 +63,7 @@ export default function HeroBlock({ component }: { component: Component }) {
               {/* Left */}
               <div className="hidden md:flex flex-col gap-10 flex-8/12">
                 <h1 className="md:text-4xl lg:text-[50px] font-medium leading-tight">
-                  {block.heading} {cityText && <span>{cityText}</span>}
+                  {block.heading} {cityText && <span>{cityText}</span>}r
                 </h1>
 
                 <div
